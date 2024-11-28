@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Hack";
+    src: url("fonts/Hack-Bold.ttf");
+}
+
+.digital-clock {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    border-radius: 2rem;
+    user-select: none;
+    padding: 0 2rem;
+    border: 0.5rem solid #2d2d2d;
+    justify-content: center;  /* Align the content properly */
+    align-items: center;      /* Align the content properly */
+}
+
+.week {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    color: #2d2d2d;
+    font-weight: bold;
+    font-family: "Hack";
+}
+
+.week div {
+    color: #2d2d2d;
+}
+
+.week .active {
+    color: white;
+    font-weight: bold;
+    background-color: #FF6600; /* Orange background */
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.time {
+    font-family: "FX_LED"; /* Ensure this font is loaded correctly */
+    text-align: center;   /* Center the time display */
+}
+
+.hour, .min, .dot {
+    display: inline;
+    font-size: 13rem;
+    margin: 0 0.3rem;
+}
+
+.min {
+    display: inline; /* Correct the display */
+}
+
+.dot {
+    display: inline;
+    font-size: 10rem;
+}
+
+.invisible {
+    visibility: hidden; 
+}
+@media (max-width: 600px) {
+    .hour, .min, .dot {
+        font-size: 8rem;
+    }
+}
